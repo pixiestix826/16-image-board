@@ -1,7 +1,24 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
+@import "bourbon";
+@import "neat";
+@import "normalize";
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+@import "font-awesome";
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #255a7d;
+}
+.fa {
+  font-size: 3rem;
+  margin-left: 4rem;
+  padding: 0.5rem;
 }

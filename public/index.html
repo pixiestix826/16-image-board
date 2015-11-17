@@ -3,22 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>Image Board</title>
+  <link rel="stylesheet" href="/normalize.css">
+  <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-  <nav>
+  <nav class="nav-bar">
     <i class="fa fa-plus-circle"></i>
   </nav>
+  <div class="nav-bar-form">
   <form action="#" class="new-photo-form">
-    <input type="text" id="image-url" placeholder="Image URL">
-    <input type="text" id="image-caption" placeholder="Image Caption">
-
+    <input type="text" id="image-url" class="form-input" placeholder="Image URL">
+    <textarea type="text" id="image-caption" class="form-input" placeholder="Image Caption"></textarea>
+  <div class="buttons">
     <button>CANCEL</button>
     <button>ADD IMAGE</button>
+  </div>
   </form>
-
-  <ul class="photo-list">
-    <li><img src="#" alt="Example Photo" /></li>
-  </ul>
+</div>
+  <div class="photo-list">
+    <img src="http://lorempixel.com/output/nature-h-c-405-480-8.jpg" alt="Example Photo" />
+    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
     <script src="/jquery.js"></script>
