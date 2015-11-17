@@ -8,6 +8,7 @@ $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 
 html {
   box-sizing: border-box;
+  background: red;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -17,8 +18,32 @@ html {
   width: 100%;
   background-color: #255a7d;
 }
-.fa {
+.fa-plus-circle  {
   font-size: 3rem;
   margin-left: 4rem;
   padding: 0.5rem;
+}
+.nav-bar-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding-top: 5rem;
+  margin: auto;
+}
+.form-input {
+  padding-left: 0.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+  width: 70%;
+  padding: 0.5rem;
+}
+.fa-picture-o {
+  color: white;
+  padding: 1rem;
+  font-size: 3rem;
 }
