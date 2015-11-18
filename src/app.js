@@ -1,9 +1,13 @@
 /* globals $ */
 export default function() {
-  var bar = $(`.nav-bar`);
-  var form = $(`.new-photo-form`);
+  var btn = $(`.fa-plus-circle`);
+  var form = $(`.drop-down`);
 
-  bar.on(`click`, function() {
-    $this.form.slideToggle();
+$(`.fa-plus-circle`).on(`click`, function() {
+  $(`.drop-down`).slideUp();
+  return false;
+});
+  $(`.fa-plus-circle`).on(`click`, function() {
+    $(`drop-down`).slideDown();
   });
 }
