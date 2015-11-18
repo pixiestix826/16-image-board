@@ -18,6 +18,10 @@ html {
   width: 100%;
   background-color: #255a7d;
 }
+.drop-down {
+  background: white;
+  height: 20rem;
+}
 .fa-plus-circle  {
   font-size: 3rem;
   margin-left: 4rem;
@@ -26,9 +30,9 @@ html {
 .nav-bar-form {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  padding-top: 5rem;
-  margin: auto;
+  width: 60rem;
+  transform: translate(25%, 20%);
+  background: white;
 }
 .form-input {
   padding-left: 0.5rem;
@@ -39,11 +43,26 @@ html {
   display: flex;
   justify-content: flex-end;
   margin: auto;
-  width: 70%;
+  transform: translate(-15%, 55%);
   padding: 0.5rem;
+}
+.add-image {
+  margin-left: 0.3rem;
+  width: 12rem;
+  background: #339d2c;
+  border: 1px transparent solid;
+  border-radius: 10px;
+  color: white;
+}
+.cancel {
+  width: 9rem;
+  border: 1px transparent solid;
+  border-radius: 10px;
+  color: white;
 }
 .fa-picture-o {
   color: white;
-  padding: 1rem;
-  font-size: 3rem;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  vertical-align: middle;
 }
