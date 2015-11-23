@@ -1,10 +1,33 @@
 /* globals $ */
 export default function() {
-  var btn = $(`.fa-plus-circle`);
-  var form = $(`.drop-down`);
+
+  var toggleForm = function() {
+    $(`.image-form`).slideToggle();
+  };
 
   $(`.fa-plus-circle`).on(`click`, function() {
-  $(`.drop-down`).slideToggle();
-  return false;
-});
+    $(`.image-form`).slideToggle();
+    return false;
+  });
+
+  // Image form saves an image
+  $(`.image-form`).on(`submit`, function(ev) {
+    //Stop page from actually submitting
+    ev.preventDefault();
+
+    var image = $(`#image-url`).val();
+    var caption = $(`#image-caption`).val();
+
+    $.ajax({
+      url: `http://tiny-lr.herokuapp.com/collections/photos-bbs`,
+      method: `POST`,
+      dataType: `json`,
+      data: {image, caption},
+    }).then((response) => {
+      //Reset form after submitting
+      $(`#image-url`).val('');
+      $(`#image-caption`).val('');
+      toggleForm();
+    });
+  });
 }

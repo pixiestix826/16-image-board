@@ -3,29 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Image Board</title>
+
+    <style>
+      .drop-down {
+        display: none;
+      }
+    </style>
+
   <link rel="stylesheet" href="/app.css">
 </head>
 <body>
   <nav class="nav-bar">
     <i class="fa fa-plus-circle"></i>
   </nav>
-  <div class="drop-down">
-    <div class="nav-bar-form">
+  <!-- <div class="drop-down"> -->
+    <form class="image-form">
       <input type="text" id="image-url" class="form-input" placeholder="Image URL">
       <textarea type="text" id="image-caption" class="form-input" placeholder="Image Caption"></textarea>
-    </div>
-    <div class="buttons">
-      <button class="cancel">CANCEL</button>
-      <button class="add-image"><i class="fa fa-picture-o"></i>ADD IMAGE</button>
-    </div>
-  </div>
-  <div class="photo-container">
-  <div class="photo-list">
-    <img src="http://masterlab.com/wp-content/uploads/2013/02/gaga-portrait-1.jpg" alt="Example Photo" />
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
-  </div>
-  </div>
+
+      <div class="buttons">
+        <button class="cancel">CANCEL</button>
+        <button class="add-image"><i class="fa fa-picture-o"></i>ADD IMAGE</button>
+      </div>
+    </form>
+  <!-- </div> -->
+
+  <ul class="image-list">
+  </ul>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
     <script src="/jquery.js"></script>

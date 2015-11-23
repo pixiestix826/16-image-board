@@ -18,22 +18,20 @@ html {
   width: 100%;
   background-color: #255a7d;
 }
-.drop-down {
-  display: none;
-  background: white;
-  height: 20rem;
-}
+
 .fa-plus-circle  {
   font-size: 3rem;
   margin-left: 4rem;
   padding: 0.5rem;
 }
-.nav-bar-form {
+.image-form {
   display: flex;
   flex-direction: column;
   width: 60rem;
-  transform: translate(25%, 20%);
+  height: 20rem;
+  margin: auto;
   background: white;
+
 }
 .form-input {
   padding-left: 0.5rem;
@@ -67,7 +65,12 @@ html {
   font-size: 2.5rem;
   vertical-align: middle;
 }
-.photo-list {
+.photo-container {
+  width: 60rem;
+  margin: auto;
+  background: #C4cccb;
+}
+.image-list {
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -75,9 +78,4 @@ html {
   background: white;
   color: #7a7d7e;
   font-size: 1rem;
-}
-.photo-container {
-  width: 60rem;
-  margin: auto;
-  background: #C4cccb;
 }
