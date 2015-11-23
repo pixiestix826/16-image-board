@@ -3,11 +3,8 @@ export default function() {
   var btn = $(`.fa-plus-circle`);
   var form = $(`.drop-down`);
 
-$(`.fa-plus-circle`).on(`click`, function() {
-  $(`.drop-down`).slideUp();
+  $(`.fa-plus-circle`).on(`click`, function() {
+  $(`.drop-down`).slideToggle();
   return false;
 });
-  $(`.fa-plus-circle`).on(`click`, function() {
-    $(`drop-down`).slideToggle();
-  });
 }
