@@ -5,8 +5,13 @@ export default function() {
     $(`.image-form`).slideToggle();
   };
 
-  $(`.fa-plus-circle`).on(`click`, function() {
+  $(`.fa-plus-circle`).on(`click`, function(ev) {
     $(`.image-form`).slideToggle();
+    return false;
+  });
+
+  $(`.cancel`).on(`click`, function(ev) {
+    $(`.image-form`).toggleForm();
     return false;
   });
 
@@ -30,4 +35,5 @@ export default function() {
       toggleForm();
     });
   });
+
 }
