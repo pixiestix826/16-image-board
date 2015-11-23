@@ -8,6 +8,6 @@ $(`.fa-plus-circle`).on(`click`, function() {
   return false;
 });
   $(`.fa-plus-circle`).on(`click`, function() {
-    $(`drop-down`).slideDown();
+    $(`drop-down`).slideToggle();
   });
 }
