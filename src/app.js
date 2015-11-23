@@ -7,7 +7,7 @@ export default function() {
 
   var showImage = function(image) {
     $('<li></li>')
-    .text(`${image}, ${image.caption}`)
+    .text(`${image.url}, ${image.caption}`)
     .appendTo('.image-list');
 
   };
