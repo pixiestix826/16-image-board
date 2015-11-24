@@ -49,7 +49,6 @@ li {
 .buttons {
   display: flex;
   justify-content: flex-end;
-  // margin: auto;
   padding: 0.5rem;
 }
 .add-image {
@@ -86,4 +85,8 @@ li {
   background: white;
   color: #7a7d7e;
   font-size: 1rem;
+}
+img {
+  width: 40em;
+  padding-top: 1.5rem;
 }
