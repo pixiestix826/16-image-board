@@ -5,11 +5,15 @@ export default function() {
     $(`.image-form`).slideToggle();
   };
 
-  var showImage = function(image) {
-    $('<li></li>')
-    .text(`${image.url}, ${image.caption}`)
+  var showGroup = function(group) {
+    var groupItem = $('<li></li>')
     .appendTo('.image-list');
 
+    $('<img>')
+    .attr('src', group.image)
+    .appendTo(groupItem);
+
+    $('<p></p>').text(group.caption).appendTo(groupItem);
   };
 
   // Click on plus button shows form
@@ -45,7 +49,7 @@ export default function() {
       toggleForm();
 
       // Add image right away to list
-      showImage(response);
+      showGroup(response);
     });
   });
 
@@ -55,5 +59,6 @@ export default function() {
     method: `GET`,
     dataType: `json`,
   }).then((response) => {
+    response.forEach(showGroup);
   });
 }

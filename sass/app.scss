@@ -16,6 +16,9 @@ html {
 
 li {
   list-style: none;
+  align-items: center;
+  margin: auto;
+  width: 65%;
 }
 
 .nav-bar {
@@ -34,6 +37,7 @@ li {
   width: 60rem;
   height: 20rem;
   margin: auto;
+  padding: 1rem;
   background: white;
 
 }
@@ -45,8 +49,7 @@ li {
 .buttons {
   display: flex;
   justify-content: flex-end;
-  margin: auto;
-  transform: translate(-15%, 55%);
+  // margin: auto;
   padding: 0.5rem;
 }
 .add-image {
@@ -78,7 +81,8 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 80%;
+  padding: 0;
+  width: 60rem;
   background: white;
   color: #7a7d7e;
   font-size: 1rem;
