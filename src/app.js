@@ -17,10 +17,7 @@ export default function() {
   };
 
   // Click on plus button shows form
-  $(`.fa-plus-circle`).on(`click`, function() {
-    $(`.image-form`).slideToggle();
-    return false;
-  });
+  $(`.fa-plus-circle`).on(`click`, toggleForm);
 
   $(`.cancel`).on(`click`, function(ev) {
     $(`.image-form`).toggleForm();
