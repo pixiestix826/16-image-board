@@ -1,6 +1,8 @@
 /* globals $ */
 export default function() {
 
+  $(`.image-form`).hide();
+
   var toggleForm = function() {
     $(`.image-form`).slideToggle();
   };
@@ -20,7 +22,11 @@ export default function() {
   $(`.fa-plus-circle`).on(`click`, toggleForm);
 
   $(`.cancel`).on(`click`, function(ev) {
-    $(`.image-form`).toggleForm();
+    //Reset form after cancel
+    $(`#image-url`).val('');
+    $(`#image-caption`).val('');
+
+    toggleForm();
 
     // Stop page from actually submitting
     ev.preventDefault();

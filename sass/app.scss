@@ -18,7 +18,9 @@ li {
   list-style: none;
   align-items: center;
   margin: auto;
-  width: 65%;
+  padding: 1.5rem;
+
+  width: 100%;
 }
 
 .nav-bar {
@@ -34,7 +36,8 @@ li {
 .image-form {
   display: flex;
   flex-direction: column;
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   height: 20rem;
   margin: auto;
   padding: 1rem;
@@ -72,7 +75,8 @@ li {
   vertical-align: middle;
 }
 .photo-container {
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   margin: auto;
   background: #C4cccb;
 }
@@ -81,12 +85,12 @@ li {
   flex-direction: column;
   margin: auto;
   padding: 0;
-  width: 60rem;
+  width: 100%;
+  max-width: 60rem;
   background: white;
   color: #7a7d7e;
   font-size: 1rem;
 }
 img {
-  width: 40em;
-  padding-top: 1.5rem;
+  width: 100%;
 }
